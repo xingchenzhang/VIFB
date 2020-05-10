@@ -2,7 +2,7 @@
 
 This is the official webpage for VIFB. For more details, please refer to: 
  
-**Multi-focus Image Fusion: A Benchmark**  
+**VIFB: A Visible and Infrared Image Fusion Benchmark**  
 Xingchen Zhang, Ping Ye, Gang Xiao.  
 [[paper](https://arxiv.org/abs/2002.03322)]
 
