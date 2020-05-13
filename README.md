@@ -1,13 +1,14 @@
 # <center>VIFB：A Visible and Infared Image Fusion Benchmark</center>
-<center>VIFB：A Visible and Infared Image Fusion Benchmark</center>
- <center>Xingchen Zhang, Ping Ye, Gang Xiao</center>
- <center>Shanghai Jiao Tong University, Imperial College London</center>
-<center>xingchen.zhang@imperial.ac.uk</center>
-<center>[[Download paper](https://arxiv.org/abs/2002.03322)]</center>    
-
 This is the official webpage for VIFB. To the best of our knowledge, VIFB is the first (and the only one to date) benchmark in the field of visible-infrared image fusion (VIF), aiming to provide a platform to perform fair and comprehensive performance comparision of VIF algorithms. Currently, **21 image pairs, 20 fusion algorithms and 13 evaluation metrics** are integrated in VIFB, which can be utilize to compare performances. All the fusion results by us are also available that can be used by users directly.
 
-VIFB will be presented at CVPRW 2020.
+VIFB will be presented at CVPRW 2020. For more details, please refer to the following paper:
+
+**VIFB：A Visible and Infared Image Fusion Benchmark**  
+Xingchen Zhang, Ping Ye, Gang Xiao  
+CVPRW 2020    
+From Shanghai Jiao Tong University & Imperial College London  
+Contact: xingchen.zhang@imperial.ac.uk  
+[[Download paper](https://arxiv.org/abs/2002.03322)]    
 
 ### Abstract
 Visible and infrared image fusion is an important area in image processing due to its numerous applications. While much progress has been made in recent years with efforts on developing fusion algorithms, there is a lack of code library and benchmark which can gauge the state-of-the-art. In this paper, after briefly reviewing recent advances of visible and infrared image fusion, we present a visible and infrared image fusion benchmark (VIFB) which consists of **21 image pairs, a code library of 20 fusion algorithms and 13 evaluation metrics**. We also carry out large scale experiments within the benchmark to understand the performance of these algorithms. By analyzing qualitative and quantitative results, we identify effective algorithms for robust image fusion and give some observations on the status and future prospects of this field.
@@ -53,9 +54,9 @@ Visible and infrared image fusion is an important area in image processing due t
 
 
 ### Examples of fused images
-![](fusion-fight-new.png)
+![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/fusion-fight-new.png)
 
-### Citation
+## Citation
 **If you find this work useful, please consider citing**:
     
     @misc{zhang2020vifb,
