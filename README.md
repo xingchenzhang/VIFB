@@ -1,11 +1,10 @@
 # <center>VIFB：A Visible and Infared Image Fusion Benchmark</center>
 This is the official webpage for VIFB. To the best of our knowledge, VIFB is the first (and the only one to date) benchmark in the field of visible-infrared image fusion (VIF), aiming to provide a platform to perform fair and comprehensive performance comparision of VIF algorithms. Currently, **21 image pairs, 20 fusion algorithms and 13 evaluation metrics** are integrated in VIFB, which can be utilize to compare performances. All the fusion results by us are also available that can be used by users directly.
 
-VIFB will be presented at CVPRW 2020. For more details, please refer to the following paper:
+For more details, please refer to the following paper:
 
 **VIFB：A Visible and Infared Image Fusion Benchmark**  
 Xingchen Zhang, Ping Ye, Gang Xiao  
-CVPRW 2020    
 From Shanghai Jiao Tong University & Imperial College London  
 Contact: xingchen.zhang@imperial.ac.uk  
 [[Download paper](https://arxiv.org/abs/2002.03322)]    
@@ -37,24 +36,23 @@ Visible and infrared image fusion is an important area in image processing due t
 
 
 ### Evaluation metrics integrated
-12. Figure definition
-13. Avgerage gradient
-14. Cross entropy
-15. Edge intensity
-16. Entropy
-17. Mutual information
-18. PSNR
-19. Qabf
-20. Qcb
-21. Qcv
-22. RMSE
-23. Spatial frequency
-24. SSIM
-25. SD 
+1. Avgerage gradient
+2. Cross entropy
+3. Edge intensity
+4. Entropy
+5. Mutual information
+6. PSNR
+7. Qabf
+8. Qcb
+9. Qcv
+10. RMSE
+11. Spatial frequency
+12. SSIM
+23. SD 
 
 
 ### Examples of fused images
-![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/raw/master/fusion-fight-new.png)
+![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/raw/master/fusion-fight.jpg)
 
 ## Citation
 **If you find this work useful, please consider citing**:
