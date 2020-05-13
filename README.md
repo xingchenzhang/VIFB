@@ -52,7 +52,7 @@ Visible and infrared image fusion is an important area in image processing due t
 
 
 ### Examples of fused images
-![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/raw/master/fusion-fight.jpg)
+![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/blob/master/fusion-fight.jpg)
 
 ## Citation
 **If you find this work useful, please consider citing**:
