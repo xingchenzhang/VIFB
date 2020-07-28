@@ -5,9 +5,14 @@ For more details, please refer to the following paper:
 
 **VIFB：A Visible and Infared Image Fusion Benchmark**  
 Xingchen Zhang, Ping Ye, Gang Xiao  
+In the Proceedings of CVPR Workshop, 2020  
 From Shanghai Jiao Tong University & Imperial College London  
 Contact: xingchen.zhang@imperial.ac.uk  
-[[Download paper](https://arxiv.org/abs/2002.03322)]    
+[[Download paper](https://arxiv.org/abs/2002.03322)]
+
+Chinese readers can also refer to [[this link](https://mp.weixin.qq.com/s/KB-f8maHuWZLUbvbxUrPxw)] for more details and the motivation of this benchmark.
+
+**Should you want to collaborate or discuss research ideas, please fell free to send me an email.**
 
 ### Abstract
 Visible and infrared image fusion is an important area in image processing due to its numerous applications. While much progress has been made in recent years with efforts on developing fusion algorithms, there is a lack of code library and benchmark which can gauge the state-of-the-art. In this paper, after briefly reviewing recent advances of visible and infrared image fusion, we present a visible and infrared image fusion benchmark (VIFB) which consists of **21 image pairs, a code library of 20 fusion algorithms and 13 evaluation metrics**. We also carry out large scale experiments within the benchmark to understand the performance of these algorithms. By analyzing qualitative and quantitative results, we identify effective algorithms for robust image fusion and give some observations on the status and future prospects of this field.
@@ -56,15 +61,12 @@ Visible and infrared image fusion is an important area in image processing due t
 
 ## Citation
 **If you find this work useful, please consider citing**:
-    
-    @misc{zhang2020vifb,
-    title={VIFB: A Visible and Infrared Image Fusion Benchmark},
-    author={Xingchen Zhang and Ping Ye and Gang Xiao},
-    year={2020},
-    eprint={2002.03322},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}
 
+	@inproceedings{zhang2020vifb,
+	title={VIFB: A Visible and Infrared Image Fusion Benchmark},
+	author={Zhang, Xingchen and Ye, Ping and Xiao, Gang},
+	booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+	year={2020}}   
 
 ### References
 [1] Durga Prasad Bavirisetti and Ravindra Dhuli. Fusion of infrared and visible sensor images based on anisotropic diffusion and karhunen-loeve transform. IEEE Sensors Journal,
