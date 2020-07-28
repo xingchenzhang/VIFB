@@ -1,5 +1,7 @@
 # <center>VIFB：A Visible and Infared Image Fusion Benchmark</center>
-This is the official webpage for VIFB. To the best of our knowledge, VIFB is the first (and the only one to date) benchmark in the field of visible-infrared image fusion (VIF), aiming to provide a platform to perform fair and comprehensive performance comparision of VIF algorithms. Currently, **21 image pairs, 20 fusion algorithms and 13 evaluation metrics** are integrated in VIFB, which can be utilize to compare performances. All the fusion results are also available that can be used by users directly.
+This is the official webpage for VIFB. 
+
+**VIFB is the first (and the only one to date) benchmark in the field of visible-infrared image fusion (VIF)**, aiming to provide a platform to perform fair and comprehensive performance comparision of VIF algorithms. Currently, **21 image pairs, 20 fusion algorithms and 13 evaluation metrics** are integrated in VIFB, which can be utilized to compare performances conveniently. All the fusion results are also available that can be used by users directly. In addition, more test images, fusion algorithms, evaluation metrics and fused images can be easily added using the provided toolkit.
 
 For more details, please refer to the following paper:
 
