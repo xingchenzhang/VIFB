@@ -30,7 +30,7 @@ Visible and infrared image fusion is an important area in image processing due t
 ### Dataset
 The dataset in VIFB is a test set, which is collected by the authors from the [Internet](https://www.ino.ca/en/solutions/video-analytics-dataset/) and from fusion tracking datasets [1,2,3]. Image registration between RGB and infrared images are also conducted by corresponding authors. We appreciate the authors of these datasets very much for making these images publicly available for research. **Please also cite these papers and the [link](https://www.ino.ca/en/solutions/video-analytics-dataset/) if you use VIFB**. Thanks!
 
-![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/blob/master/example.jpg)
+![](https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark/blob/master/dataset.jpg)
 
 
 ### Methods integrated
