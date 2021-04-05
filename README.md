@@ -87,24 +87,24 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 
 ## How to use
 ### How to run algorithms
-1. Please set the algorithms you want to run in util/configMethods.m
-2. Please set the images you want to fuse in util/configImgsVI.m and util/configImgsIR.m, and change the path of these images
+1. Please set the algorithms you want to run in util\configMethods.m
+2. Please set the images you want to fuse in util\configImgsVI.m and util/configImgsIR.m, and change the path of these images
 3. DLF and ResNet methods need MatConvNet to run. One should set the path to MatConvNet in run_ DLF.m (line 28) nad run_ ResNet.m (line 10), respectively.
-4. DLF requires 'imagenet-vgg-verydeep-19.mat' to run. Please download it and put it inside methods/DLF
-5. ResNet requires 'imagenet-resnet-50-dag.mat' to run. Please download it and put it inside methods/ResNet
+4. DLF requires 'imagenet-vgg-verydeep-19.mat' to run. Please download it and put it inside methods\DLF
+5. ResNet requires 'imagenet-resnet-50-dag.mat' to run. Please download it and put it inside methods\ResNet\models
 6. To run GFF, please set your own path in run_GFF.m (line 17) 
 7. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
 8. Enjoy!
 
 
 ### How to compute evaluation metrics
-1. Please set the metrics you want to compute in util/configMetrics.m
+1. Please set the metrics you want to compute in util\configMetrics.m
 2. compute_metrics.m is used to compute evaluation metrics. Please change the output path in compute_metrics.m
 3. Enjoy!
 
 ### How to add algorithms (or fused images)
 1. For methods written in MATLAB, please put them in the folder methods. For example, for method "ADF", put the codes inside a folder called "ADF", and put the folder "ADF" inside "Methods". Then change the main file of ADF to run_ADF.m. In run_ADF.m, please change the interface as according to examples provided in VIFB.
-2. For algorithms written in Python or other languages, we suggest the users change the name of the fused images  according to examples provided and put them in the output folder. Then add the methods in util/configMethods.m. Then, the evaluation metrics can be computed.
+2. For algorithms written in Python or other languages, we suggest the users change the name of the fused images  according to examples provided and put them in the output folder. Then add the methods in util\configMethods.m. Then, the evaluation metrics can be computed.
 
 ## Acknowledgement
 The overall framework of VIFB is created based on OTB [21]. We thank the authors of OTB very much for making OTB publicly available. We also thank all authors of the integrated images, VIF methods and evaluation metrics for sharing their work to the community! 
