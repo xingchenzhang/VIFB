@@ -5,7 +5,7 @@ This is the official webpage of VIFB.
 
 For more details, please refer to the following paper:
 
-**VIFB：A Visible and Infared Image Fusion Benchmark**  
+**VIFB: A Visible and Infared Image Fusion Benchmark**  
 Xingchen Zhang, Ping Ye, Gang Xiao  
 In the Proceedings of CVPR Workshop, 2020  
 From Shanghai Jiao Tong University & Imperial College London  
@@ -14,7 +14,7 @@ Contact: xingchen.zhang@imperial.ac.uk
 
 Chinese readers can also refer to [[this link](https://mp.weixin.qq.com/s/KB-f8maHuWZLUbvbxUrPxw)] for more details and the motivation of this benchmark. We really hope this benchmark can contribute to the development of image fusion field. 
 
-**If you find this work useful, please consider citing**:
+**If you use this code, please cite**:
 
 	@inproceedings{zhang2020vifb,
 	title={VIFB: A Visible and Infrared Image Fusion Benchmark},
@@ -89,9 +89,12 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 ### How to run algorithms
 1. Please set the algorithms you want to run in util/configMethods.m
 2. Please set the images you want to fuse in util/configImgsVI.m and util/configImgsIR.m, and change the path of these images
-3. DLF and ResNet methods need MatConvNet to run. One should set the path to MatConvNet in run_ DLF nad run_ ResNet, respectively.
-4. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
-5. Enjoy!
+3. DLF and ResNet methods need MatConvNet to run. One should set the path to MatConvNet in run_ DLF.m (line 28) nad run_ ResNet.m (line 10), respectively.
+4. DLF requires 'imagenet-vgg-verydeep-19.mat' to run. Please download it and put it inside methods/DLF
+5. ResNet requires 'imagenet-resnet-50-dag.mat' to run. Please download it and put it inside methods/ResNet
+6. To run GFF, please set your own path in run_GFF.m (line 17) 
+7. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
+8. Enjoy!
 
 
 ### How to compute evaluation metrics
