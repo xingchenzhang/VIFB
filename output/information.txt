@@ -1,0 +1,59 @@
+The image paris are:
+       carLight
+      carShadow
+       carWhite
+       elecbike
+          fight
+         kettle
+         labMan
+            man
+        manCall
+         manCar
+       manlight
+     manWalking
+     manwithbag
+       nightCar
+   peopleshadow
+        running
+           snow
+       tricycle
+        walking
+       walking2
+   walkingnight
+               
+The methods are:
+            ADF
+            CBF
+            CNN
+            DLF
+           FPDE
+           GFCE
+            GFF
+            GTF
+        HMSD_GF
+     Hybrid_MSD
+         IFEVIP
+         LatLRR
+           MGFF
+         MST_SR
+           MSVD
+        NSCT_SR
+         ResNet
+          RP_SR
+            TIF
+         VSMWLS
+               
+The metrics are:
+   Avg_gradient
+  Cross_entropy
+ Edge_intensity
+        Entropy
+         Mutinf
+           Psnr
+           Qabf
+            Qcb
+            Qcv
+           Rmse
+Spatial_frequency
+           Ssim
+       Variance

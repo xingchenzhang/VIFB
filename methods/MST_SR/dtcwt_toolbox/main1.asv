@@ -1,0 +1,92 @@
+clc;
+clear all;
+%I1=imread('E:\sun\Í¼Æ¬\fig1.jpg');
+%I2=imread('E:\sun\Í¼Æ¬\fig2.jpg');
+%I1=colorspace('yuv<-rgb',I1);
+%I2=colorspace('yuv<-rgb',I2);
+%Y1=I1(:,:,1);
+%Y2=I1(:,:,2);
+
+I1=imread('D:\MATLAB701\work\Lena.jpg');
+I1=double(I1);
+[ax,ay]=gfilter(I1,2);
+IG=abs(((ax.^2)+(ay.^2)).^0.5);
+
+N=1;
+[A1,H1,V1,D1] = SWT2(I1,N,'db1');
+[r,c]=size(I1);
+
+H1=abs(H1);
+V1=abs(V1);
+D1=abs(D1);
+%ÖÐÖµÂË²¨
+ HS=medfilt1((medfilt1((H1)',9))',9);
+ VS=medfilt1((medfilt1((V1)',9))',9);
+% DS=medfilt1((medfilt1((D1)',9))',9);
+D_S=I_medfilt(D1,9,45);
+
+
+
+% ÐÎÌ¬Ñ§¸¯Ê´
+HM=imerode(HS/2,ones(3,3));
+VM=imerode(VS/2,ones(3,3));
+DM=imerode(DS/2,ones(3,3));
+%ÌÝ¶È
+[hx,hy]=gfilter(HS,2);
+HG=abs(((hx.^2)+(hy.^2)).^0.5);                                     
+
+[vx,vy]=gfilter(VS,2);
+VG=abs(((vx.^2)+(vy.^2)).^0.5); 
+
+[dx,dy]=gfilter(DS,2);
+DG=abs(((dx.^2)+(dy.^2)).^0.5);
+n=3*r*c; 
+Max=max(max(HG));
+H_G=HG/Max;
+HW=n/sum(sum(H_G.^2));
+Max=max(max(VG));
+V_G=VG/Max;
+VW=n/sum(sum(V_G.^2));
+Max=max(max(DG));
+D_G=DG/Max;
+DW=n/sum(sum(D_G.^2));
+TG=HW.*H_G+VW.*V_G+DW.*D_G;
+E=HM+VM+DM;
+TG1=sort(TG(:));
+WT=3*median(TG1);
+IG1=sort(IG(:));
+WI=median(IG1);
+
+%WT=mean2(TG2);
+%WI=4*mean2(IG);
+a=2;
+b=7;
+for i=1:r
+    for j=1:c
+        h=E(i,j)/a-b;
+        if h<0
+            k=0;
+        else
+            k=h;
+        end
+        Activity(i,j)=exp(k);
+        I_G(i,j)=IG(i,j)/Activity(i,j);
+        GS(i,j)=I_G(i,j)/WI+TG(i,j)/WT;   
+    end
+end
+
+
+I3 = imhmin(GS,1.3); 
+L = watershed(I3);
+
+I=L~=0;
+figure;imshow(mat2gray(I))
+%figure;imshow(mat2gray(I_G))
+%figure;imshow(mat2gray(TG./WT))
+%figure;imshow(mat2gray(GS))
+
+
+
+
+
+

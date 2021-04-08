@@ -1,0 +1,19 @@
+I1=imread('lab1.bmp');
+I2=imread('lab2.bmp');
+I1=imresize(I1,[480 480]);
+I2=imresize(I2,[480 480]);
+I1=double(I1);
+I2=double(I2);
+[Y1,h1] = dtwavexfm2(I1,n,'near_sym_b','qshift_b');
+[Y2,h2] = dtwavexfm2(I2,n,'near_sym_b','qshift_b');
+for k=3:-1:2
+    for m=1:6
+        xp=imresize(h1{k}(:,:,m),2);%
+        argxp=angle(xp);
+        argx=angle(h1{k-1}(:,:,m));
+        argx=argx-2*argxp;
+        absx=abs(h1{k-1}(:,:,m));
+        xa=
+    
+    for i=1:
+    

@@ -1,0 +1,33 @@
+function [ax,ay]=gfilter(I,sigma)
+%输入图像为I，标准差sigma
+[m,n]=size(I);
+Rr=2:m-1;cc=2:n-1;
+e=repmat(logical(uint8(0)),m,n);
+%产生同样大小的边缘图像e，初始化为1 ，即初始化边缘
+GaussianDieOff=-0.001;%设定高斯函数消失门限
+PercentOfPixelsNotEdges=-7;%用于计算边缘门限
+ThresholdRatio=-4;%设置两个门限的比例
+%首先设计高斯滤波器和它的微分
+pw=1:30;
+%设定滤波器宽度
+ssq=sigma*sigma;
+%计算方差
+width=max(find(exp(-(pw.*pw)/(2*sigma*sigma))>GaussianDieOff));
+%计算滤波算子宽度
+t=(-width:width);
+len=2*width+1;
+t3=[t-.5;t;t+.5];
+%对每个像素左右各半个像素位置的值进行平均
+gau=sum(exp(-(t3.*t3)/(2*ssq))).'/(6*pi*ssq);
+%一维高斯滤波器
+dgau=(-t.*exp(-(t.*t)/(2*ssq))/ssq).';
+%高斯滤波器的微分
+ra=size(I,1);
+ca=size(I,2);
+ay=double(I);ax=double(I');
+%h=conv(gau,dgau);
+%利用高斯函数滤除噪声和用高斯算子的一阶微分对图像滤波合并为一个算子
+ax=conv2(ax,dgau,'same').';
+%产生x方向滤波
+ay=conv2(ay,dgau,'same');
+%产生y方向滤波

@@ -1,0 +1,41 @@
+
+OMPBox Frequently Asked Questions
+---------------------------------
+
+
+Q. Your package does not work! I get an error like this:
+
+??? Attempt to execute SCRIPT ompbox\private\ompmex as a function:
+C:\............................................\ompbox\private\ompmex.m
+
+Error in ==> omp at 162
+gamma = ompmex(D,X,DtX,G,T,sparse_gamma,msgdelta,profile);
+
+A. This version of the package comes as source code, and requires compilation.
+Please read the README file and follow the directions - it is really quite easy!
+
+
+
+Q. I suspect OMP is running terribly slow. Can I verify this? What can be done?
+
+A. You can run OMPSPEEDTEST to verify your suspicion. You will note that the
+function uses a slightly different number of signals every run - this is because
+before it begins the actual test, it performs a small speed evaluation and
+selects the number of signals to code based on the speed of the system. If the
+number of selected signals is less than, say, 400 or so, then yes, OMP is indeed
+running very slow (typical values here are around 500-1500). The most probabe
+cause of this, assuming you are using a decent Pentium IV processor or faster,
+is compiling OMP with a compiler that does not perform optimization (e.g. LCC).
+Make sure you are compiling using MS-Visual Studio on Windows, GCC on Linux,
+or any other descent compiler, and that you did not disable optimization
+(if you do not know how to do this, you probably did not). Run "mex -setup" from
+the Matlab prompt to verify your compiler selection, and recompile if needed.
+
+
+
+Q. Your package does not compile/run/work on my system.
+
+A. Well, unfortunately I only have access to a limited number of system configurations.
+So, if you are experiencing an error on your system, please let me know! These things
+can usually be corrected easily - for everyone's benefit.
+
