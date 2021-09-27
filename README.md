@@ -78,7 +78,7 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 10. RMSE
 11. Spatial frequency
 12. SSIM
-23. SD 
+13. SD 
 
 
 ### Examples of fused images
@@ -93,8 +93,9 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 4. DLF requires 'imagenet-vgg-verydeep-19.mat' to run. Please download it and put it inside methods\DLF
 5. ResNet requires 'imagenet-resnet-50-dag.mat' to run. Please download it and put it inside methods\ResNet\models
 6. To run GFF, please set your own path in run_GFF.m (line 17) 
-7. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
-8. Enjoy!
+7. To run MST_SR for the first time, please run "make" in the path "...\methods\MST_SR\sparsefusion\ksvdbox\ompbox\private". Similarly, to run RP_SR for the first time, run "make" in the path "...\methods\RP_SR\sparsefusion\ksvdbox\ompbox\private". To run NSCT_SR for the first time, run "make" in the path "...\methods\NSCT_SR\sparsefusion\ksvdbox\ompbox\private".
+8. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
+9. Enjoy!
 
 
 ### How to compute evaluation metrics
