@@ -66,7 +66,7 @@ We have integrated 13 evaluation metrics in VIFB. The codes are collected from t
 
 Many thanks to the authors of these evaluation metric codes for sharing their codes with the community. Please forgive us because we can not find the original source of these codes so we can not mention everyone here. Please let us know if you think you are the authors of these evaluation metric codes and we will add references and acknowledgements. Many thanks!
 
-1. Avgerage gradient
+1. Average gradient
 2. Cross entropy
 3. Edge intensity
 4. Entropy
@@ -111,41 +111,25 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 The overall framework of VIFB is created based on OTB [21]. We thank the authors of OTB very much for making OTB publicly available. We also thank all authors of the integrated images, VIF methods and evaluation metrics for sharing their work to the community! 
 
 ### References
-[1] C. Li, X. Liang, Y. Lu, N. Zhao, and J. Tang, “Rgb-t object tracking: benchmark and baseline,” Pattern Recognition, p106977, 2019.
-[2] J. W. Davis and V. Sharma, “Background-subtraction using contour-based fusion of thermal and visible imagery,”
-Computer vision and image understanding, vol. 106, no. 2-3, pp. 162–182, 2007.
-[3] C. O’Conaire, N. E. O’Connor, E. Cooke, and A. F. Smeaton, “Comparison of fusion methods for thermo-visual surveillance tracking,” in 2006 9th International Conference on Information Fusion. IEEE, 2006, pp. 1–7.
-[4] Durga Prasad Bavirisetti and Ravindra Dhuli. Fusion of infrared and visible sensor images based on anisotropic diffusion and karhunen-loeve transform. IEEE Sensors Journal,
-16(1):203–209, 2016.  
-[5] B. K. Shreyamsha Kumar. Image fusion based on pixel significance using cross bilateral filter. Signal, Image and Video
-Processing, 9(5):1193–1204, Jul 2015  
-[6] Yu Liu, Xun Chen, Juan Cheng, Hu Peng, and Zengfu Wang. Infrared and visible image fusion with convolutional neural
-networks. International Journal of Wavelets, Multiresolution and Information Processing, 16(03):1850018, 2018  
-[7] Hui Li, Xiao-Jun Wu, and Josef Kittler. Infrared and visible image fusion using a deep learning framework. 24th
-International Conference on Pattern Recognition, 2018.  
-[8] Durga Prasad Bavirisetti, Gang Xiao, and Gang Liu. Multisensor image fusion based on fourth order partial differential equations. In 2017 20th International Conference on
-Information Fusion (Fusion), pages 1–9. IEEE, 2017.  
-[9] Zhiqiang Zhou, Mingjie Dong, Xiaozhu Xie, and Zhifeng Gao. Fusion of infrared and visible images for night-vision
-context enhancement. Applied optics, 55(23):6480–6490, 2016.    
-[10] Shutao Li, Xudong Kang, and Jianwen Hu. Image fusion with guided filtering. IEEE Transactions on Image
-processing, 22(7):2864–2875, 2013.  
-[11] Jiayi Ma, Chen Chen, Chang Li, and Jun Huang. Infrared and visible image fusion via gradient transfer and total variation
-minimization. Information Fusion, 31:100–109, 2016.   
-[12] Zhiqiang Zhou, Bo Wang, Sun Li, and Mingjie Dong. Perceptual fusion of infrared and visible images through a hybrid multi-scale decomposition with gaussian and bilateral
-filters. Information Fusion, 30:15–26, 2016.  
-[13] Yu Zhang, Lijia Zhang, Xiangzhi Bai, and Li Zhang. Infrared and visual image fusion through infrared feature extraction
-and visual information preservation. Infrared Physics & Technology, 83:227 – 237, 2017.  
-[14] Hui Li and Xiaojun Wu. Infrared and visible image fusion using latent low-rank representation. arXiv preprint
-arXiv:1804.08992, 2018.  
-[15] Durga Prasad Bavirisetti, Gang Xiao, Junhao Zhao, Ravindra Dhuli, and Gang Liu. Multi-scale guided image and video
-fusion: A fast and efficient approach. Circuits, Systems, and Signal Processing, 38(12):5576–5605, Dec 2019.   
-[16] Yu Liu, Shuping Liu, and Zengfu Wang. A general framework for image fusion based on multi-scale transform and
-sparse representation. Information Fusion, 24:147–164, 2015.  
-[17] VPS Naidu. Image fusion technique using multi-resolution singular value decomposition. Defence Science Journal,
-61(5):479–484, 2011.  
-[18] Hui Li, Xiao-Jun Wu, and Tariq S Durrani. Infrared and visible image fusion with resnet and zero-phase component
-analysis. Infrared Physics & Technology, 102:103039, 2019.  
+[1] C. Li, X. Liang, Y. Lu, N. Zhao, and J. Tang, “Rgb-t object tracking: benchmark and baseline,” Pattern Recognition, p106977, 2019.  
+[2] J. W. Davis and V. Sharma, “Background-subtraction using contour-based fusion of thermal and visible imagery,” Computer vision and image understanding, vol. 106, no. 2-3, pp. 162–182, 2007.  
+[3] C. O’Conaire, N. E. O’Connor, E. Cooke, and A. F. Smeaton, “Comparison of fusion methods for thermo-visual surveillance tracking,” in 2006 9th International Conference on Information Fusion. IEEE, 2006, pp. 1–7.  
+[4] Durga Prasad Bavirisetti and Ravindra Dhuli. Fusion of infrared and visible sensor images based on anisotropic diffusion and karhunen-loeve transform. IEEE Sensors Journal, 16(1):203–209, 2016.  
+[5] B. K. Shreyamsha Kumar. Image fusion based on pixel significance using cross bilateral filter. Signal, Image and Video Processing, 9(5):1193–1204, Jul 2015.  
+[6] Yu Liu, Xun Chen, Juan Cheng, Hu Peng, and Zengfu Wang. Infrared and visible image fusion with convolutional neural networks. International Journal of Wavelets, Multiresolution and Information Processing, 16(03):1850018, 2018.  
+[7] Hui Li, Xiao-Jun Wu, and Josef Kittler. Infrared and visible image fusion using a deep learning framework. 24th International Conference on Pattern Recognition, 2018.  
+[8] Durga Prasad Bavirisetti, Gang Xiao, and Gang Liu. Multisensor image fusion based on fourth order partial differential equations. In 2017 20th International Conference on Information Fusion (Fusion), pages 1–9. IEEE, 2017.  
+[9] Zhiqiang Zhou, Mingjie Dong, Xiaozhu Xie, and Zhifeng Gao. Fusion of infrared and visible images for night-vision context enhancement. Applied optics, 55(23):6480–6490, 2016.  
+[10] Shutao Li, Xudong Kang, and Jianwen Hu. Image fusion with guided filtering. IEEE Transactions on Image processing, 22(7):2864–2875, 2013.  
+[11] Jiayi Ma, Chen Chen, Chang Li, and Jun Huang. Infrared and visible image fusion via gradient transfer and total variation minimization. Information Fusion, 31:100–109, 2016.  
+[12] Zhiqiang Zhou, Bo Wang, Sun Li, and Mingjie Dong. Perceptual fusion of infrared and visible images through a hybrid multi-scale decomposition with gaussian and bilateral filters. Information Fusion, 30:15–26, 2016.  
+[13] Yu Zhang, Lijia Zhang, Xiangzhi Bai, and Li Zhang. Infrared and visual image fusion through infrared feature extraction and visual information preservation. Infrared Physics & Technology, 83:227 – 237, 2017.  
+[14] Hui Li and Xiaojun Wu. Infrared and visible image fusion using latent low-rank representation. arXiv preprint arXiv:1804.08992, 2018.  
+[15] Durga Prasad Bavirisetti, Gang Xiao, Junhao Zhao, Ravindra Dhuli, and Gang Liu. Multi-scale guided image and video fusion: A fast and efficient approach. Circuits, Systems, and Signal Processing, 38(12):5576–5605, Dec 2019.  
+[16] Yu Liu, Shuping Liu, and Zengfu Wang. A general framework for image fusion based on multi-scale transform and sparse representation. Information Fusion, 24:147–164, 2015.  
+[17] VPS Naidu. Image fusion technique using multi-resolution singular value decomposition. Defence Science Journal, 61(5):479–484, 2011.  
+[18] Hui Li, Xiao-Jun Wu, and Tariq S Durrani. Infrared and visible image fusion with resnet and zero-phase component analysis. Infrared Physics & Technology, 102:103039, 2019.  
 [19] Durga Prasad Bavirisetti and Ravindra Dhuli. Two-scale image fusion of visible and infrared images using saliency detection. Infrared Physics & Technology, 76:52–64, 2016.  
 [20] Jinlei Ma, Zhiqiang Zhou, Bo Wang, and Hua Zong. Infrared and visible image fusion based on visual saliency map
-and weighted least square optimization. Infrared Physics & Technology, 82:8–17, 2017.  
-[21] Y. Wu, J. Lim, & M. H., Yang. Online object tracking: A benchmark. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2411-2418, 2013.
+and weighted least square optimization. Infrared Physics & Technology, 82:8–17, 2017. 
+[21] Y. Wu, J. Lim, & M. H., Yang. Online object tracking: A benchmark. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2411-2418, 2013. 
