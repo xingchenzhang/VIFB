@@ -4,7 +4,7 @@
 % 
 % The interface is created by the authors of VIFB.
 
-function img = run_MST_SR(imgA, imgB, visualization)
+function img = run_LP_SR(imgA, imgB, visualization)
 
     addpath(genpath('sparsefusion'));
     addpath(genpath('dtcwt_toolbox'));
