@@ -48,12 +48,12 @@ Currently, we have integrated 20 VIF algorithms in VIFB. Many thanks for the aut
 10. Hybrid_MSD [12]
 11. IFEVIP [13]
 12. LatLRR [14]
-13. MGFF [15]
-14. MST_SR [16]
+13. LP_SR [15]
+14. MGFF [16]
 15. MSVD [17]
-16. NSCT_SR [16]
+16. NSCT_SR [15]
 17. ResNet [18]
-18. RP_SR [16]
+18. RP_SR [15]
 19. TIF [19]
 20. VSMWLS [20]
 
@@ -62,11 +62,11 @@ The download links of each algorithm can be found on [this website](https://zhua
 We modified the interfaces of these algorithms to run them in VIFB conveniently. For other methods written in MATLAB, they can also be added to VIFB by chaning the interface. For algorithms written in Python or other languages, we suggest the users change the name of the fused images and put them in the output folder. Then the evaluation methods can be computed by finishing correponding settings.
 
 ### Evaluation metrics integrated
-We have integrated 13 evaluation metrics in VIFB. The codes are collected from the Internet, forum, etc. and checked the authors. 
+We have integrated 13 evaluation metrics in VIFB. The codes are collected from the Internet, forum, etc. and checked by the authors.
 
 Many thanks to the authors of these evaluation metric codes for sharing their codes with the community. Please forgive us because we can not find the original source of these codes so we can not mention everyone here. Please let us know if you think you are the authors of these evaluation metric codes and we will add references and acknowledgements. Many thanks!
 
-1. Avgerage gradient
+1. Average gradient
 2. Cross entropy
 3. Edge intensity
 4. Entropy
@@ -93,7 +93,7 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 4. DLF requires 'imagenet-vgg-verydeep-19.mat' to run. Please download it and put it inside methods\DLF
 5. ResNet requires 'imagenet-resnet-50-dag.mat' to run. Please download it and put it inside methods\ResNet\models
 6. To run GFF, please set your own path in run_GFF.m (line 17) 
-7. To run MST_SR for the first time, please run "make" in the path "...\methods\MST_SR\sparsefusion\ksvdbox\ompbox\private". Similarly, to run RP_SR for the first time, run "make" in the path "...\methods\RP_SR\sparsefusion\ksvdbox\ompbox\private". To run NSCT_SR for the first time, run "make" in the path "...\methods\NSCT_SR\sparsefusion\ksvdbox\ompbox\private".
+7. To run LP_SR for the first time, please run "make" in the path "...\methods\LP_SR\sparsefusion\ksvdbox\ompbox\private". Similarly, to run RP_SR for the first time, run "make" in the path "...\methods\RP_SR\sparsefusion\ksvdbox\ompbox\private". To run NSCT_SR for the first time, run "make" in the path "...\methods\NSCT_SR\sparsefusion\ksvdbox\ompbox\private".
 8. main_running.m is used to run the fusion algorithms. Please change the output path in main_running.m.
 9. Enjoy!
 
@@ -111,12 +111,12 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 The overall framework of VIFB is created based on OTB [21]. We thank the authors of OTB very much for making OTB publicly available. We also thank all authors of the integrated images, VIF methods and evaluation metrics for sharing their work to the community! 
 
 ### References
-[1] C. Li, X. Liang, Y. Lu, N. Zhao, and J. Tang, “Rgb-t object tracking: benchmark and baseline,” Pattern Recognition, p106977, 2019.
+[1] C. Li, X. Liang, Y. Lu, N. Zhao, and J. Tang, “Rgb-t object tracking: benchmark and baseline,” Pattern Recognition, p106977, 2019.  
 [2] J. W. Davis and V. Sharma, “Background-subtraction using contour-based fusion of thermal and visible imagery,”
-Computer vision and image understanding, vol. 106, no. 2-3, pp. 162–182, 2007.
-[3] C. O’Conaire, N. E. O’Connor, E. Cooke, and A. F. Smeaton, “Comparison of fusion methods for thermo-visual surveillance tracking,” in 2006 9th International Conference on Information Fusion. IEEE, 2006, pp. 1–7.
+Computer vision and image understanding, vol. 106, no. 2-3, pp. 162–182, 2007.  
+[3] C. O’Conaire, N. E. O’Connor, E. Cooke, and A. F. Smeaton, “Comparison of fusion methods for thermo-visual surveillance tracking,” in 2006 9th International Conference on Information Fusion. IEEE, 2006, pp. 1–7.  
 [4] Durga Prasad Bavirisetti and Ravindra Dhuli. Fusion of infrared and visible sensor images based on anisotropic diffusion and karhunen-loeve transform. IEEE Sensors Journal,
-16(1):203–209, 2016.  
+16(1):203–209, 2016.      
 [5] B. K. Shreyamsha Kumar. Image fusion based on pixel significance using cross bilateral filter. Signal, Image and Video
 Processing, 9(5):1193–1204, Jul 2015  
 [6] Yu Liu, Xun Chen, Juan Cheng, Hu Peng, and Zengfu Wang. Infrared and visible image fusion with convolutional neural
@@ -137,10 +137,9 @@ filters. Information Fusion, 30:15–26, 2016.
 and visual information preservation. Infrared Physics & Technology, 83:227 – 237, 2017.  
 [14] Hui Li and Xiaojun Wu. Infrared and visible image fusion using latent low-rank representation. arXiv preprint
 arXiv:1804.08992, 2018.  
-[15] Durga Prasad Bavirisetti, Gang Xiao, Junhao Zhao, Ravindra Dhuli, and Gang Liu. Multi-scale guided image and video
-fusion: A fast and efficient approach. Circuits, Systems, and Signal Processing, 38(12):5576–5605, Dec 2019.   
-[16] Yu Liu, Shuping Liu, and Zengfu Wang. A general framework for image fusion based on multi-scale transform and
-sparse representation. Information Fusion, 24:147–164, 2015.  
+[15] Yu Liu, Shuping Liu, and Zengfu Wang. A general framework for image fusion based on multi-scale transform and
+sparse representation. Information Fusion, 24:147–164, 2015.   
+[16] Durga Prasad Bavirisetti, Gang Xiao, Junhao Zhao, Ravindra Dhuli, and Gang Liu. Multi-scale guided image and video fusion: A fast and efficient approach. Circuits, Systems, and Signal Processing, 38(12):5576–5605, Dec 2019.   
 [17] VPS Naidu. Image fusion technique using multi-resolution singular value decomposition. Defence Science Journal,
 61(5):479–484, 2011.  
 [18] Hui Li, Xiao-Jun Wu, and Tariq S Durrani. Infrared and visible image fusion with resnet and zero-phase component
