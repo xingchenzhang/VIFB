@@ -40,7 +40,7 @@ function img = run_GFCE(imgVI, imgIR, visualization)
         
     tic;
     if size(img2, 3) == 1
-        fuseimage = GPCE(img2, img1);
+        fuseimage = GFCE(img2, img1);
     elseif size(img1,3) == 1
         fuseimage = zeros(size(img2));
         for i=1:3
