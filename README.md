@@ -22,6 +22,13 @@ Chinese readers can also refer to [[this link](https://mp.weixin.qq.com/s/KB-f8m
 	booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
 	year={2020}}  
 
+	@article{zhang2023visible,
+	title={Visible and Infrared Image Fusion Using Deep Learning},
+	author={Zhang, Xingchen and Demiris, Yiannis},
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	year={2023},
+	publisher={IEEE}}
+
 ## Abstract
 Visible and infrared image fusion is an important area in image processing due to its numerous applications. While much progress has been made in recent years with efforts on developing fusion algorithms, there is a lack of code library and benchmark which can gauge the state-of-the-art. In this paper, after briefly reviewing recent advances of visible and infrared image fusion, we present a visible and infrared image fusion benchmark (VIFB) which consists of **21 image pairs, a code library of 20 fusion algorithms and 13 evaluation metrics**. We also carry out large scale experiments within the benchmark to understand the performance of these algorithms. By analyzing qualitative and quantitative results, we identify effective algorithms for robust image fusion and give some observations on the status and future prospects of this field.
 
@@ -60,6 +67,13 @@ Currently, we have integrated 20 VIF algorithms in VIFB. Many thanks for the aut
 The download links of each algorithm can be found on [this website](https://zhuanlan.zhihu.com/p/342971809). For each algorithm, we use original settings reported by corresponding authors in their papers. For deep learning-based methods, the pretrained model provided by corresponding authors are used. We did not train these algorithms.
 
 We modified the interfaces of these algorithms to run them in VIFB conveniently. For other methods written in MATLAB, they can also be added to VIFB by chaning the interface. For algorithms written in Python or other languages, we suggest the users change the name of the fused images and put them in the output folder. Then the evaluation methods can be computed by finishing correponding settings.
+
+#### Updated: we added results for 5 VIF methods:
+1. IFCNN [21]
+2. SeAFusion [22]
+3. SwinFusion [23]
+4. U2Fusion [24]
+5. YDTR [25]
 
 ### Evaluation metrics integrated
 We have integrated 13 evaluation metrics in VIFB. The codes are collected from the Internet, forum, etc. and checked by the authors.
@@ -108,7 +122,7 @@ Many thanks to the authors of these evaluation metric codes for sharing their co
 2. For algorithms written in Python or other languages, we suggest the users change the name of the fused images  according to examples provided and put them in the output folder. Then add the methods in util\configMethods.m. Then, the evaluation metrics can be computed.
 
 ## Acknowledgement
-The overall framework of VIFB is created based on OTB [21]. We thank the authors of OTB very much for making OTB publicly available. We also thank all authors of the integrated images, VIF methods and evaluation metrics for sharing their work to the community! 
+The overall framework of VIFB is created based on OTB [26]. We thank the authors of OTB very much for making OTB publicly available. We also thank all authors of the integrated images, VIF methods and evaluation metrics for sharing their work to the community! 
 
 ### References
 [1] C. Li, X. Liang, Y. Lu, N. Zhao, and J. Tang, “Rgb-t object tracking: benchmark and baseline,” Pattern Recognition, p106977, 2019.  
@@ -145,6 +159,10 @@ sparse representation. Information Fusion, 24:147–164, 2015.
 [18] Hui Li, Xiao-Jun Wu, and Tariq S Durrani. Infrared and visible image fusion with resnet and zero-phase component
 analysis. Infrared Physics & Technology, 102:103039, 2019.  
 [19] Durga Prasad Bavirisetti and Ravindra Dhuli. Two-scale image fusion of visible and infrared images using saliency detection. Infrared Physics & Technology, 76:52–64, 2016.  
-[20] Jinlei Ma, Zhiqiang Zhou, Bo Wang, and Hua Zong. Infrared and visible image fusion based on visual saliency map
-and weighted least square optimization. Infrared Physics & Technology, 82:8–17, 2017.  
-[21] Y. Wu, J. Lim, & M. H., Yang. Online object tracking: A benchmark. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2411-2418, 2013.
+[20] Jinlei Ma, Zhiqiang Zhou, Bo Wang, and Hua Zong. Infrared and visible image fusion based on visual saliency map and weighted least square optimization. Infrared Physics & Technology, 82:8–17, 2017.  
+[21] Zhang, Y., Liu, Y., Sun, P., Yan, H., Zhao, X., & Zhang, L.. IFCNN: A general image fusion framework based on convolutional neural network. Information Fusion, 54, 99-118, 2020.  
+[22] L. Tang, J. Yuan, & J. Ma. Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network. Information Fusion, 82, 28-42, 2022.  
+[23] J. Ma, L. Tang, F. Fan, J. Huang, X. Mei, & Y. Ma. SwinFusion: Cross-domain long-range learning for general image fusion via swin transformer. IEEE/CAA Journal of Automatica Sinica, 9(7), 1200-1217, 2022.  
+[24] H. Xu, J. Ma, J. Jiang, X. Guo, & H. Ling. U2Fusion: A unified unsupervised image fusion network. IEEE Transactions on Pattern Analysis and Machine Intelligence, 44(1), 502-518, 2022.  
+[25] W. Tang, F. He, & Y. Liu. YDTR: infrared and visible image fusion via y-shape dynamic transformer. IEEE Transactions on Multimedia, 2022.  
+[26] Y. Wu, J. Lim, & M. H., Yang. Online object tracking: A benchmark. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2411-2418, 2013.
